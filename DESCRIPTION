@@ -1,0 +1,27 @@
+Package: carboncopy
+Type: Package
+Title: RStudio Add-In for Inline Reporting of Datestamped Output
+Version: 0.1.0
+Authors@R: c(
+    person(given   = "Desi",
+           family  = "Quintans",
+           email   = "science@desiquintans.com",
+           role    = c("cre", "aut", "cph"),
+           comment = c(ORCID = "0000-0003-3356-0293"))
+           )
+Maintainer: Desi Quintans <science@desiquintans.com>
+Description: Presenting a program's output together with its code lets you show
+    the program to others without having to reload large datasets or execute
+    long-running processes. When we're unable to work in 'RMarkdown' documents,
+    we do this by including program output as comments in plain 'R' scripts.
+    This 'RStudio add-in' automates that by inserting the console output of the
+    last expression as a comment, along with a datestamp showing when the code
+    was last run for reportability.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    utils
+Suggests:
+    rstudioapi (>= 0.99.796)
+RoxygenNote: 7.2.3

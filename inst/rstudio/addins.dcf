@@ -1,0 +1,4 @@
+Name: Insert .Last.value as a comment
+Description: Insert the last output as a datestamped comment.
+Binding: cc_insert_lastvalue
+Interactive: true
