@@ -1,7 +1,4 @@
----
-title: "`carboncopy`"
-subtitle: "An RStudio Add-In for inline reporting of datestamped output"
----
+# `carboncopy` - An RStudio Add-In for inline reporting of datestamped output
 
 --------------------------------------------------------------------------------
 
