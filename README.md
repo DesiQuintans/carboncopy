@@ -53,7 +53,7 @@ shortcut by going to **Tools > Modify Keyboard Shortcuts** and searching for
 Note that the width of the output comment is based on the width of your Console
 Pane *at the time you insert the comment*. This is because the add-in tells R to
 print `.Last.value` to the current console, then captures that output and
-redirects it. Simply put, if your output is too narrow:
+redirects it. Simply put, if your output is too wide or too narrow:
 
 ``` r
 head(iris)
@@ -81,7 +81,7 @@ head(iris)
 #     < Last run: 2023-09-26 >
 ```
 
-Then widen your Console Pane and try again:
+Then change the width of your Console Pane and try again:
 
 ``` r
 head(iris)
@@ -127,15 +127,15 @@ the output directly, and insert it below.
 
 ``` r
 stem(warpbreaks$breaks)
-#   The decimal point is 1 digit(s) to the right of the |
+# The decimal point is 1 digit(s) to the right of the |
 # 
-#   1 | 0234555667788899
-#   2 | 001111445666678889999
-#   3 | 00156699
-#   4 | 1234
-#   5 | 124
-#   6 | 7
-#   7 | 0
+# 1 | 0234555667788899
+# 2 | 001111445666678889999
+# 3 | 00156699
+# 4 | 1234
+# 5 | 124
+# 6 | 7
+# 7 | 0
 # 
 #     < Last run: 2023-09-26 >
 ```
