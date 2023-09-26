@@ -38,7 +38,7 @@ cc_insert_lastvalue <- function() {
 
         rstudioapi::setCursorPosition(c(next_line, 1))
     } else {
-        # Nothing is selected, so use .Last.value.
+        # Nothing is selected, so use saved .Last.value.
         out <- utils::capture.output(.Last.value)
     }
 
@@ -73,4 +73,6 @@ cc_insert_lastvalue <- function() {
     out[length(out)] <- paste0(out[length(out)], "\n\n")  # Add blank lines after insertion
 
     rstudioapi::insertText(out)
+
+    return(invisible(.Last.value))
 }

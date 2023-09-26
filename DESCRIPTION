@@ -1,7 +1,7 @@
 Package: carboncopy
 Type: Package
 Title: RStudio Add-In for Inline Reporting of Datestamped Output
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(
     person(given   = "Desi",
            family  = "Quintans",
