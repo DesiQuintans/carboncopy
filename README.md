@@ -12,30 +12,7 @@ large datasets or execute long-running processes. This RStudio Add-In automates
 that by inserting the last expression's output as a comment, along with a 
 datestamp showing when the code was last run for reportability. 
 
-For example, you might want to record that your survey respondents are all 
-aged 18 or older:
-
-``` r
-my_data <- filter(my_data, age >= 18)
-
-fivenum(my_data$age)
-#  Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-# 18.00   32.00   50.00   48.52   64.00   81.00 
-#     < Last run: 2023-09-26 >
-```
-
-Or you may want to show how a numeric range was split into factor levels:
-
-``` r
-my_data$age_fct <- cut(my_data$age, breaks = c(18, 40, 60, Inf), include.lowest = TRUE)
-
-table(my_data$age_fct, useNA = "always")
-#  [18,40]  (40,60] (60,Inf]     <NA> 
-#      112       90       98        0 
-#     < Last run: 2023-09-26 >
-```
-
-
+![](https://github.com/DesiQuintans/carboncopy/blob/main/readme_files/demo_gif.gif?raw=true)
 
 --------------------------------------------------------------------------------
 
