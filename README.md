@@ -3,11 +3,18 @@
 --------------------------------------------------------------------------------
 
 It is useful to present some of a program's output together with its code, even
-when we're working in plain `.R` scripts and not RMarkdown documents. This lets
-us show the code to people and demonstrate what it does without having to reload 
-large datasets or execute long-running processes. This RStudio Add-In automates 
-that by inserting the last expression's output as a comment, along with a 
-datestamp showing when the code was last run for reportability. 
+when we're working in plain `.R` scripts and not RMarkdown documents. We might
+want to do this for a few reasons, including:
+
+1. We can show the code to other people and demonstrate what it does without
+   having to reload large datasets or execute long-running processes.
+2. If we do exploratory analyses to make decisions about data cleaning and
+   processing, e.g. `table()` or `fivenum()` calls, we can keep the results of
+   those analyses in the code as a paper trail.
+   
+This RStudio Add-In automates that by inserting the last expression's output as 
+a comment, along with a datestamp showing when the code was last run for 
+reportability and as a code smell.
 
 ![](https://github.com/DesiQuintans/carboncopy/blob/main/readme_files/demo_gif.gif?raw=true)
 
