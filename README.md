@@ -88,7 +88,7 @@ head(iris)
 #     < Last run: 2023-09-26 >
 ```
 
-Then change the width of your Console Pane and try again:
+Then either zoom out in RStudio with `[Ctrl] + [-]` to make the text smaller, or change the width of your Console Pane, and then try again:
 
 ``` r
 head(iris)
