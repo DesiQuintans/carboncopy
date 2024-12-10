@@ -24,15 +24,22 @@ reportability and as a code smell.
 
 ## Install it
 
-You can install the development version of `carboncopy` like so:
+The best way to get `carboncopy` is to install it through `addinslist`, which lets
+you browse other RStudio add-ins too.
+
+```r
+install.packages("addinslist")
+```
+
+Alternatively, you can install the development version of `carboncopy` like so:
 
 ``` r
 # install.packages("remotes")
 remotes::install_github("DesiQuintans/carboncopy")
 ```
 
-(CRAN coming)
-(Addinslist coming)
+This package will not be released on CRAN.
+
 
 
 ## Access it...
@@ -85,7 +92,7 @@ head(iris)
 # 4  setosa
 # 5  setosa
 # 6  setosa
-#     < Last run: 2023-09-26 >
+#     < Last run: 2023-09-26 13:28>
 ```
 
 Then either zoom out in RStudio with `[Ctrl] + [-]` to make the text smaller, or change the width of your Console Pane, and then try again:
@@ -99,7 +106,7 @@ head(iris)
 # 4          4.6         3.1          1.5         0.2  setosa
 # 5          5.0         3.6          1.4         0.2  setosa
 # 6          5.4         3.9          1.7         0.4  setosa
-#     < Last run: 2023-09-26 >
+#     < Last run: 2023-09-26 13:28>
 ```
 
 
@@ -113,7 +120,7 @@ comment_ to insert the output in your document:
 summary(beaver1$temp)
 #  Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 # 36.33   36.76   36.87   36.86   36.96   37.53 
-#     < Last run: 2023-09-26 >
+#     < Last run: 2023-09-26 13:29>
 ```
 
 ### With functions that return nothing except Console output
@@ -125,7 +132,7 @@ happens when you insert the last output:
 ``` r
 stem(warpbreaks$breaks)
 # NULL
-#     < Last run: 2023-09-26 >
+#     < Last run: 2023-09-26 13:31>
 ```
 
 To capture the output of these, highlight the entire expression and then invoke 
@@ -144,5 +151,5 @@ stem(warpbreaks$breaks)
 # 6 | 7
 # 7 | 0
 # 
-#     < Last run: 2023-09-26 >
+#     < Last run: 2023-09-26 13:34>
 ```
