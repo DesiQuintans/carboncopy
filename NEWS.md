@@ -1,3 +1,7 @@
+# carboncopy 0.1.2
+
+- Add HH:MM to the output's timestamp.
+
 # carboncopy 0.1.1
 
 - `cc_insert_lastvalue()` invisibly returns the original `.Last.value` so that 

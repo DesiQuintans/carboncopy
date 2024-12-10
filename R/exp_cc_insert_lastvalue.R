@@ -63,7 +63,7 @@ cc_insert_lastvalue <- function() {
     out <- c(substr(x     = out,
                     start = n_spaces + 1,  # +1 so that it skips n = `n_spaces` chars.
                     stop  = .Machine$integer.max),
-             format(Sys.time(), "    < Last run: %Y-%m-%d >"))
+             format(Sys.time(), "    < Last run: %Y-%m-%d %R>"))
 
     if (nchar(trimws(out[1])) == 0) {  # If first line is empty, omit it.
         out <- out[-1]
